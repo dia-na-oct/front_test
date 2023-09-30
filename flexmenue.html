@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleflexmenue.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,6 +21,47 @@
                 <li><a href="" class="tw">twitter</a></li>
             </ul>
         </nav>
+
+<div style="margin: 20px;">
+<span>layout</span>
+<a href="" class="stack"> stack </a>
+<a href="" class="grid"> grid</a>
+</div>
+
+        <section id="blocks">
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+            <article>
+                <h2>this is funny</h2>
+                <p>Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.Yo ninjas, in this CSS Flexbox tutorial, I'll walk through creating a grid and stacked layout, which the user can toggle between.</p>
+            </article>
+        </section>
     </div>
+    <script>
+        $("a.stack").on("click",function(){
+$("article").addClass("stack");
+        });
+        $("a.grid").on("click",function(){
+$("article").removeClass("stack");
+        });
+    </script>
 </body>
 </html>
