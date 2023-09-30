@@ -1,0 +1,76 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+body{
+    background-color: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #333;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+nav a{
+    text-decoration: none;
+   /* text-align: center;*/
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #555;
+}
+
+
+
+a.tw ,a.fb{
+    background: url(photos/2.PNG) no-repeat center ;
+    background-size: 80%;
+}
+.social a{
+text-indent: -10000000px;
+}
+nav ul.social
+{
+    flex: 1 1 0;
+    display: flex ;
+}
+nav ul.social li
+{
+   flex:1 1 0;
+}
+
+.social{
+    max-width: 80px;
+  margin: 0 auto;
+}
+@media screen and (min-width:500px){
+    nav ul{
+        display: flex;
+       /* justify-content: center;to make all its element in the center */
+    }
+    nav li{
+        flex: 1 1 0;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .social{
+        margin: 0;
+    }
+}
+
+
