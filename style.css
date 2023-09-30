@@ -10,29 +10,32 @@ body{
    max-width: 960px;
 }
 .flex-container{
+    height: 300px;
     display: flex;
     background-color: #fff;
-    flex-wrap: wrap;/* i had made min-width200px and flex grow ,
+    /* flex-wrap: wrap;/* i had made min-width200px and flex grow ,
     if i make the screen smaller they are going to be smaller and 
     devide space entre them because they have flex grow f 1 ,
     but if they arrived to 200px there will be a scroll to see all the element 
     so we dont this to happen , we use flex  wrap : to back element
-    to other line*/
+    to other line*/ 
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
 .box{
     height: 100px;
     min-width: 200px;
+     flex: 0 0 100px;/*grow shrink bases(how much do we start) */
  
 }
 .one{
     background-color: red;
-    flex-grow: 1;
+    
 }
 .two{
     background-color: blue;
-flex-grow: 1;
 }
 .three{
     background-color: green;
-flex-grow: 1;
 }
