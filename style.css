@@ -1,0 +1,38 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+body{
+    background-color: #eee;
+}
+.wrapper{
+    width: 100%;
+   max-width: 960px;
+}
+.flex-container{
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;/* i had made min-width200px and flex grow ,
+    if i make the screen smaller they are going to be smaller and 
+    devide space entre them because they have flex grow f 1 ,
+    but if they arrived to 200px there will be a scroll to see all the element 
+    so we dont this to happen , we use flex  wrap : to back element
+    to other line*/
+}
+.box{
+    height: 100px;
+    min-width: 200px;
+ 
+}
+.one{
+    background-color: red;
+    flex-grow: 1;
+}
+.two{
+    background-color: blue;
+flex-grow: 1;
+}
+.three{
+    background-color: green;
+flex-grow: 1;
+}
